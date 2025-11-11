@@ -2,12 +2,14 @@
 #define PERSON_H
 #include <string>
 using namespace std;
-class person{
+class Person{
   private:
     string name;
     int id;
+
     public:
     void display();
+    Person(string name,int id);
 
 };
 #endif
