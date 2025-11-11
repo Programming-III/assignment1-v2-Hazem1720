@@ -32,12 +32,10 @@ Course::Course(string courseName,string courseCode,int maxStudents){
      this->courseName=courseName;
 this->courseCode=courseCode;
 this->maxStudents=maxStudents;
-students[]=new int[maxStudents];
+students[] =new int[maxStudents];
     currentStudents=0
-}
+};
 void Course:: addStudent(const Student& s){
-    
-    
 students[currentStudents]=s;
 currentStudents++;
 
@@ -45,14 +43,14 @@ currentStudents++;
 void Course:: displayCourseInfo(){
     cout<<courseName<<courseCode<<maxStudents<<currentStudents<<endl;
     for(int i=0;i<currentStudents;i++){
-        cout<<students[i]<<endl;
+        cout <<students[i]<<endl;
 }
-int main(){
-    Student s =new("cs",19);
-    Course c =new("math","19",5);
-    Instructor i==new("p",7);
+class main(){
+    Student s =Student ("cs",19);
+    Course c =Course("math","19",5);
+    Instructor i=Instructor("p",7);
     addStudent(s);
     c.displayCourseInfo();
-    |s.display()
+    s.display()
     i.display();
 }
