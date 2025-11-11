@@ -3,11 +3,12 @@
 #include "Person.h"
 #include <string>
 using namespace std;
-class student : public person {
+class Student : public Person {
   private:
     string major;
     int yearLevel;
   public:
+  Student(string major, int yearLevel);
     void display();
 };
 #endif
